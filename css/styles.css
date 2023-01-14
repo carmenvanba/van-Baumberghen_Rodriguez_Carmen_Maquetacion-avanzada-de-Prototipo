@@ -1,0 +1,32 @@
+/* Color variables */
+:root {
+	--myCyan: #5CE1E6;
+	--myBlue: #152349;
+}
+
+/*bg-image*/
+body{
+    background-image: url("../images/background.png"); 
+} 
+
+/*NavBar*/
+.navbar{
+    background-color: var(--myBlue);
+}
+.btn{
+    background-color: var(--myCyan);
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color:var(--myCyan);
+}
+.a:active{
+    color: aqua;
+}
+
+
+
+/*Body content*/
