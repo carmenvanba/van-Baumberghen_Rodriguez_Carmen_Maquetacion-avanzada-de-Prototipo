@@ -4,6 +4,11 @@
 	--myBlue: #152349;
 }
 
+/* Texts */
+h1, h2{
+    color: var(--myBlue);
+}
+
 /*bg-image*/
 body{
     background-image: url("../images/background.png"); 
@@ -30,3 +35,22 @@ body{
 
 
 /*Body content*/
+
+
+
+/* Left */
+
+
+/* Profile */
+#profile_icon{
+    width: 500px;
+}
+.progress{
+    background-color: var(--myBlue);
+    margin: 10px;
+    height: 20px;
+}
+#exp_bar{
+    width: 25%;
+    background-color: var(--myCyan);
+}
