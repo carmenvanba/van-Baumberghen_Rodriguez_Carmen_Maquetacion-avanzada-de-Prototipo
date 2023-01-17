@@ -27,57 +27,21 @@
 <body>
     <header>
         <!-- place navbar here -->
-            <!-- Navbar content -->
-            <nav class="navbar navbar-light" id="mynavbar">
-                <div class="container-fluid">
-                  <a class="nav-link" href="../html/loreseekers.html">Inicio</a>
-                  <a class="nav-link" href="#">Nuevo Diario</a>
-                  <a class="nav-link" href="#">Nuevo Diario</a>
-                  <a class="nav-link" href="#">Nuevo Diario</a>
-                  <a class="nav-link" href="#">Nuevo Diario</a>
-                  <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
+        <!-- Navbar content -->
+        <nav class="navbar navbar-light" id="mynavbar">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-start">
+                    <a class="nav-link me-4" href="../html/loreseekers.html">Inicio</a>
+                    <a class="nav-link me-4" href="#">Nuevo Diario</a>
+                    <a class="nav-link me-4" href="#">Logros</a>
+                    <a class="nav-link me-4" href="#">Contactos</a>
                 </div>
-              </nav>
-
-
-
-
-
-
-
-
-
-
-
-            <nav class="navbar navbar-expand-sm">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="mynavbar">
-                        <ul class="navbar-nav me-5">
-                            <li class="nav-item active me-1">
-                                <a class="nav-link" href="../html/loreseekers.html">Inicio</a>
-                            </li>
-                            <li class="nav-item me-1">
-                                <a class="nav-link" href="#">Nuevo Diario</a>
-                            </li>
-                            <li class="nav-item me-1">
-                                <a class="nav-link" href="#">Logros</a>
-                            </li>
-                            <li class="nav-item me-1">
-                                <a class="nav-link" href="#">Contactos</a>
-                            </li>
-                        </ul>
-                        <!--Search bar-->
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Buscar">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                    </div>
-
-                </div>
-            </nav>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
     </header>
 
 
@@ -86,38 +50,50 @@
     <main>
 
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" id="body_container">
                 <!--Left Side-->
-                <div class="col-8 bg-danger">
+                <div class="col-8">
+                    <!--Character Info + buttons-->
                     <div class="container">
                         <div class="row">
-                            <div class="col bg-primary">
-                                <img class="bd-placeholder-img img-fluid mx-auto rounded-circle p-4" id="profile_icon"
-                                    src="../images/icon_01.png">
-                                    <h2>Experiencia</h2>
+                            <div class="col-4 bg-primary">
+                                <img class="bd-placeholder-img img-fluid mx-auto rounded-circle p-4 d-block"
+                                    id="profile_icon" src="../images/icon_01.png">
+                                <h2>Experiencia</h2>
                                 <div class="progress">
                                     <div class="progress-bar" id="exp_bar" role="progressbar" aria-valuenow="25"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="col bg-secondary">
-                                <h2>@nombre</h2>
-                                <h2>Lvl 1</h2>
-                                ----
-                                BUTTON CON ICON QUESTS
-                            </div>
-                            <div class="col bg-primary">
-                                Three
-                                ----
-                                BUTTON CON ICON SHOP
+                            <div class="col-8 bg-primary">
+                                <div class="container mt-3">
+                                    <h2>@nombre</h2>
+                                    <h2>Lvl 1</h2>
+                                </div>
+                                <!--Buttons-->
+                                <div class="container align-items-center mt-5 position-relative p-3">
+                                    <img class="bd-placeholder-img img-fluid mx-auto rounded-circle position-absolute"
+                                        id="btn_icon" src="../images/icon_01.png">
+                                    <button type="button" class="btn btn-outline-info me-5"
+                                        id="btn_body">Misiones</button>
+                                    <img class="bd-placeholder-img img-fluid mx-auto rounded-circle position-absolute"
+                                        id="btn_icon" src="../images/icon_01.png">
+                                    <button type="button" class="btn btn-outline-info me-5"
+                                        id="btn_body">Tienda</button>
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                    <!--Journals-->
+                    <div class="container mt-3 bg-danger">
+                        LOS DIARIOS
                     </div>
                 </div>
 
                 <!--Right Side-->
                 <div class="col-4 bg-warning">
-                    RIGHT
+                    CHAT
                 </div>
             </div>
         </div>

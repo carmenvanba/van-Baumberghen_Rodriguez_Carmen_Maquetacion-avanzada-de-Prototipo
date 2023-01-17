@@ -1,56 +1,90 @@
 /* Color variables */
 :root {
-	--myCyan: #5CE1E6;
-	--myBlue: #152349;
+    --myCyan: #5CE1E6;
+    --myBlue: #152349;
 }
 
 /* Texts */
-h1, h2{
+h1,
+h2 {
     color: var(--myBlue);
 }
 
 /*bg-image*/
-body{
-    background-image: url("../images/background.png"); 
-} 
+body {
+    background-image: url("../images/background.png");
+}
 
 /*NavBar*/
-.navbar{
+.navbar {
     background-color: var(--myBlue);
 }
-.btn{
+
+.btn {
     background-color: var(--myCyan);
     color: white;
 }
-.nav-link{
+
+.nav-link {
     color: white;
 }
-.nav-link:hover{
-    color:var(--myCyan);
+
+.nav-link:hover {
+    color: var(--myCyan);
 }
-.a:active{
+
+.a:active {
     color: aqua;
 }
 
 
 
 /*Body content*/
+#body_container{
+    background-color: white;
+}
+.container {
+    position: relative;
+}
 
+.box {
+    position: absolute;
+}
+
+.overlay {
+    z-index: 9;
+}
+
+#btn_icon {
+    width: 150px;
+
+}
+
+#btn_body {
+    margin-left: 140px;
+    margin-top: 50px;
+    z-index: 9;
+    
+    width: 200px;
+    height: 50px;
+}
 
 
 /* Left */
 
 
 /* Profile */
-#profile_icon{
-    width: 500px;
+#profile_icon {
+    width: 300px;
 }
-.progress{
+
+.progress {
     background-color: var(--myBlue);
     margin: 10px;
     height: 20px;
 }
-#exp_bar{
+
+#exp_bar {
     width: 25%;
     background-color: var(--myCyan);
 }
