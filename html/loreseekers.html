@@ -20,6 +20,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--My Styles-->
     <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/chat_style.css" rel="stylesheet">
 </head>
 
 
@@ -32,8 +33,8 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-start">
                     <a class="nav-link me-4" href="../html/loreseekers.html">Inicio</a>
-                    <a class="nav-link me-4" href="#">Nuevo Diario</a>
-                    <a class="nav-link me-4" href="#">Logros</a>
+                    <a class="nav-link me-4" href="../html/nuevoDiario.html">Nuevo Diario</a>
+                    <a class="nav-link me-4" href="../html/Logros.html">Logros</a>
                     <a class="nav-link me-4" href="#">Contactos</a>
                 </div>
                 <form class="d-flex">
@@ -93,7 +94,78 @@
 
                 <!--Right Side-->
                 <div class="col-4 bg-warning">
-                    CHAT
+                    <section>
+                        <div class="container py-2">
+
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-12">
+
+                                    <div class="card" id="chat1" style="border-radius: 15px;">
+                                        <div class="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0" id="chat_head"
+                                            style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                                            <i class="fas fa-angle-left"></i>
+                                            <p class="mb-0 fw-bold">Chat</p>
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                        <div class="card-body">
+
+                                            <div class="d-flex flex-row justify-content-start mb-4">
+                                                <img src="../images/loreseekers_logo.png" alt="avatar 1"
+                                                    style="width: 45px; height: 100%;">
+                                                <div class="p-3 ms-3"
+                                                    style="border-radius: 15px; background-color: #d1d1d1;">
+                                                    <p class="small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellendus perferendis odit?</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-row justify-content-end mb-4">
+                                                <div class="p-3 me-3 border"
+                                                    style="border-radius: 15px; background-color: #9abaff">
+                                                    <p class="small mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro distinctio iure illum repellendus neque deleniti excepturi in, vitae enim officia!.</p>
+                                                </div>
+                                                <img src="../images/icon_01.png" alt="avatar 1"
+                                                    style="width: 45px; height: 100%;">
+                                            </div>
+
+                                            <div class="d-flex flex-row justify-content-start mb-4">
+                                                <img src="../images/loreseekers_logo.png" alt="avatar 1"
+                                                    style="width: 45px; height: 100%;">
+                                                <div class="ms-3" style="border-radius: 15px;">
+                                                    <div class="bg-image">
+                                                        <img src="../images/loreseekers_logo.png" style="border-radius: 15px; background-color: #d1d1d1;"
+                                                            alt="video">
+                                                        <a href="#!">
+                                                            <div class="mask"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-row justify-content-start mb-4">
+                                                <img src="../images/loreseekers_logo.png" alt="avatar 1"
+                                                    style="width: 45px; height: 100%;">
+                                                <div class="p-3 ms-3"
+                                                    style="border-radius: 15px; background-color: #d1d1d1;">
+                                                    <p class="small mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-outline">
+                                                <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                                                <label class="form-label" for="textAreaExample">Escribe tu
+                                                    mensaje</label>
+                                                <button type="button"
+                                                    class="btn btn-info btn-rounded float-end m-1">Enviar</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
