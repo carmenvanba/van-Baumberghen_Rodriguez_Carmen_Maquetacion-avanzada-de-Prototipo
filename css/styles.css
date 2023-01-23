@@ -2,6 +2,7 @@
 :root {
     --myCyan: #5CE1E6;
     --myBlue: #152349;
+    --myBlue2: #152349e3;
 }
 
 /* Texts */
@@ -14,6 +15,8 @@ h2 {
 body {
     background-image: url("../images/back_1.png");
 }
+
+/* Images */
 
 /*NavBar*/
 .navbar {
@@ -38,8 +41,10 @@ body {
 }
 
 
-
 /*Body content*/
+#main_content{
+    background-color: var(--myBlue2);
+}
 #body_container{
     background-color: white;
 }
@@ -70,14 +75,6 @@ body {
 }
 
 
-#index_row{
-    background-color: var(--myBlue);
-}
-#formulary{
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
 /* Left */
 
 
@@ -95,4 +92,11 @@ body {
 #exp_bar {
     width: 25%;
     background-color: var(--myCyan);
+}
+
+/* Footer */
+footer{
+    color: white;
+    background-color: var(--myBlue);
+    padding: 15px;
 }
