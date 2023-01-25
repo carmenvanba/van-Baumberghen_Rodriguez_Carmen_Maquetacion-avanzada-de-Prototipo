@@ -60,6 +60,7 @@ body {
     z-index: 9;
 }
 
+/* Buttons */
 #btn_icon {
     width: 150px;
 
@@ -73,6 +74,8 @@ body {
     width: 200px;
     height: 50px;
 }
+
+
 
 
 /* Left */
