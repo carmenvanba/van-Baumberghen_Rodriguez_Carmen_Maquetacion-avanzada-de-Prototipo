@@ -7,7 +7,9 @@
 }
 
 /* Texts */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: white;
 }
 
@@ -22,10 +24,12 @@ body {
     width: 600px;
     height: 300px;
 }
-#diary_icon{
+
+#diary_icon {
     width: 355px;
 }
-#header_icon{
+
+#header_icon {
     width: 870px;
     height: 300px;
 }
@@ -54,15 +58,24 @@ body {
 
 
 /*Body content*/
-#main_content{
+#main_content {
     background-color: var(--myBlue2);
 }
-#text_bg{
+
+#text_bg {
     background-color: var(--MyCyanShadow);
 }
-#body_container{
+
+#body_container {
     background-color: white;
 }
+
+#diaries_section {
+    height: 682px;
+    width: 66%;
+    overflow: auto;
+}
+
 .container {
     position: relative;
 }
@@ -85,7 +98,7 @@ body {
     margin-left: 120px;
     margin-top: 50px;
     z-index: 9;
-    
+
     width: 200px;
     height: 50px;
 }
@@ -111,11 +124,8 @@ body {
 }
 
 /* Footer */
-footer{
+footer {
     color: white;
     background-color: var(--myBlue);
     padding: 15px;
 }
-
-
-
