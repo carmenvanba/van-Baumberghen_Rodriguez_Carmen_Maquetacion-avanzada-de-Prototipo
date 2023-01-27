@@ -32,8 +32,8 @@
           <a class="nav-link me-4" href="../html/nuevoDiario.html">Nuevo Diario</a>
           <a class="nav-link me-4" href="../html/Logros.html">Logros</a>
           <a class="nav-link me-4" href="#">Amigos</a>
-          <a class="nav-link me-4" href="#">Misiones</a>
-          <a class="nav-link me-4" href="#">Tienda</a>
+          <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Misiones</a>
+          <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Tienda</a>
         </div>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -48,9 +48,9 @@
     <div class="row">
 
       <!--Left column Profile-->
-      <div class="col-xs-1 col-sm col-md-6 col-lg-4 py-3 ps-5 pe-4 bg-danger">
-        <div class="rounded-1 bg-secondary p-2 mb-3">
-          <img class="bd-placeholder-img img-fluid" id="profile_icon" src="../images/icon_01.png">
+      <div class="col-xs-1 col-sm col-md-6 col-lg-4 py-3 ps-5 pe-4">
+        <div class="rounded-1 p-2 mb-3" id="main_content">
+          <img class="mx-auto d-block bd-placeholder-img img-fluid" id="profile_icon" src="../images/placeholder.jpg">
           <h2>@nombre</h2>
           <h3>Lvl 1</h3>
           <div class="progress">
@@ -59,9 +59,9 @@
             </div>
           </div>
         </div>
-        <div class="rounded-1 bg-secondary p-2 mb-3">
+        <div class="rounded-1 p-2 mb-2" id="main_content">
           <h3>Sobre mí:</h3>
-          <div class="rounded-3 bg-warning p-2">
+          <div class="rounded-3 p-2" id="text_bg">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eligendi nostrum recusandae quasi tempora
               rerum nisi ex quibusdam exercitationem eos explicabo pariatur, molestiae consectetur nulla rem eveniet
               velit inventore autem, facilis ipsa repudiandae. Corporis laboriosam aspernatur aliquam molestias
@@ -74,44 +74,46 @@
 
 
       <!--Right column Diaries-->
-      <div class="col-xs-1 col-sm col-md-6 col-lg-8 py-3 bg-primary">
+      <div class="col-xs-1 col-sm col-md-6 col-lg-8 py-3">
 
-        <!--1º Diary-->
-        <div class="rounded-1 bg-secondary p-2">
+        
+        <div class="rounded-1 p-2" id="main_content">
           <h2>Diarios</h2>
-          <div class="rounded-3 bg-warning p-2 m-5">
-            <div class="row p-1">
-              <div class="col-xs-1 col-sm col-md-6 col-lg-8 bg-light">
+          <!--1º Diary-->
+          <div class="rounded-3 p-2 m-5" id="text_bg" >
+            <div class="row p-1 m-1">
+              <div class="col-xs-1 col-sm col-md-6 col-lg-8 rounded-1 p-3" id="main_content">
                 <h3>Diario 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam corrupti possimus tempora.</p>
               </div>
-              <div class="col-xs-1 col-sm col-md-6 col-lg-4 bg-danger">
-                <img class="mx-auto d-block" id="profile_icon" src="../images/background.png">
+              <div class="col-xs-1 col-sm col-md-6 col-lg-4">
+                <img class="d-block" id="diary_icon" src="../images/placeholder.jpg">
               </div>
             </div>
-            <button class="btn btn-outline-info" type="button">Editar Diario</button>
+            <button class="btn btn-outline-info m-2" type="button">Editar Diario</button>
           <!--End 1º Diary-->
           </div>
 
           <!--2º Diary-->
-          <div class="rounded-3 bg-warning p-2 m-5">
-            <div class="row p-1">
-              <div class="col-xs-1 col-sm col-md-6 col-lg-8 bg-light">
+          <div class="rounded-3 p-2 m-5" id="text_bg" >
+            <div class="row p-1 m-1">
+              <div class="col-xs-1 col-sm col-md-6 col-lg-8 rounded-1 p-3" id="main_content">
                 <h3>Diario 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam corrupti possimus tempora.</p>
               </div>
-              <div class="col-xs-1 col-sm col-md-6 col-lg-4 bg-danger">
-                <img class="mx-auto d-block" id="profile_icon" src="../images/background.png">
+              <div class="col-xs-1 col-sm col-md-6 col-lg-4">
+                <img class="d-block" id="diary_icon" src="../images/placeholder.jpg">
               </div>
             </div>
-            <button class="btn btn-outline-info" type="button">Editar Diario</button>
+            <button class="btn btn-outline-info m-2" type="button">Editar Diario</button>
           <!--End 2º Diary-->
           </div>
+
+
+
+
           <!--End Right column Diaries-->
         </div>
-
-
-
         <!--End grid-->
       </div>
 

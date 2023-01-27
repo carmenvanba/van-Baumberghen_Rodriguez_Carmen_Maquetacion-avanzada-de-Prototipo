@@ -3,20 +3,28 @@
     --myCyan: #5CE1E6;
     --myBlue: #152349;
     --myBlue2: #152349e3;
+    --MyCyanShadow: rgb(39, 92, 136)
 }
 
 /* Texts */
-h1,
-h2 {
-    color: var(--myBlue);
+h1, h2, h3 {
+    color: white;
 }
 
 /*bg-image*/
 body {
     background-image: url("../images/back_1.png");
+    color: white;
 }
 
 /* Images */
+#profile_icon {
+    width: 600px;
+    height: 300px;
+}
+#diary_icon{
+    width: 355px;
+}
 
 /*NavBar*/
 .navbar {
@@ -44,6 +52,9 @@ body {
 /*Body content*/
 #main_content{
     background-color: var(--myBlue2);
+}
+#text_bg{
+    background-color: var(--MyCyanShadow);
 }
 #body_container{
     background-color: white;
@@ -82,12 +93,10 @@ body {
 
 
 /* Profile */
-#profile_icon {
-    width: 300px;
-}
+
 
 .progress {
-    background-color: var(--myBlue);
+    background-color: var(--MyCyanShadow);
     height: 20px;
     width: 200px;
 }
