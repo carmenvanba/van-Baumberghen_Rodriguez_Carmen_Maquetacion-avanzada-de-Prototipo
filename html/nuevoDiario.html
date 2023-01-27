@@ -24,6 +24,7 @@
 
 
 <!--Recurso de editor de texto de: https://www.tiny.cloud/blog/bootstrap-wysiwyg-editor/-->
+
 <body>
     <header>
         <!-- place navbar here -->
@@ -34,7 +35,9 @@
                     <a class="nav-link me-4" href="../html/loreseeker.html">Inicio</a>
                     <a class="nav-link me-4" href="../html/nuevoDiario.html">Nuevo Diario</a>
                     <a class="nav-link me-4" href="../html/Logros.html">Logros</a>
-                    <a class="nav-link me-4" href="#">Contactos</a>
+                    <a class="nav-link me-4" href="#">Amigos</a>
+                    <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Misiones</a>
+                    <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Tienda</a>
                 </div>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -43,16 +46,43 @@
             </div>
         </nav>
     </header>
-    <img src="../images/icon_01.png" class="img-fluid mx-auto d-block" alt="...">
+    <div class="container mt-2 mb-4">
+        <img src="../images/placeholder.jpg" class="img-fluid mx-auto d-block m-2" alt="..." id="header_icon">
+        <button type="submit" class="btn btn-primary mx-auto d-block">Nueva Img</button>
+    </div>
 
 
 
-        
-    <!-- TinyMCE CDN -->
-    <script src="https://cdn.tiny.cloud/1/m65sembkoj9qv1j8zav92ucza0ne3k7b7vvcfjuslvru7k1n/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    </head>
 
-    <script>
-        tinymce.init({
+
+
+    <div class="container mt-2 mb-4">
+        <!--Bootstrap classes arrange web page components into columns and rows in a grid -->
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-8" id="main_content">
+                <h1 class="h2 mb-4">Nuevo Diario</h1>
+                <p class="bg-danger">The warning message will remain if you're opening the file in a browser without
+                    running it through a local host.</p>
+                <div class="form-group">
+                    <textarea
+                        id="editor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempora aliquid dolor minima dolorem, ipsum id molestias et asperiores velit.....</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mx-auto d-block">Hecho</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<!--Scripts-->
+<!-- TinyMCE CDN -->
+<script src="https://cdn.tiny.cloud/1/m65sembkoj9qv1j8zav92ucza0ne3k7b7vvcfjuslvru7k1n/tinymce/6/tinymce.min.js"
+    referrerpolicy="origin"></script>
+
+<script>
+    tinymce.init({
         selector: 'textarea#editor',
         plugins: 'lists, link, image, media',
         toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help',
@@ -60,45 +90,31 @@
         setup: (editor) => {
             // Apply the focus effect
             editor.on("init", () => {
-            editor.getContainer().style.transition = "border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out";
-              });
-            editor.on("focus", () => { (editor.getContainer().style.boxShadow = "0 0 0 .2rem rgba(0, 123, 255, .25)"),
-            (editor.getContainer().style.borderColor = "#80bdff");
-              });
+                editor.getContainer().style.transition = "border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out";
+            });
+            editor.on("focus", () => {
+                (editor.getContainer().style.boxShadow = "0 0 0 .2rem rgba(0, 123, 255, .25)"),
+                    (editor.getContainer().style.borderColor = "#80bdff");
+            });
             editor.on("blur", () => {
-            (editor.getContainer().style.boxShadow = ""),
-            (editor.getContainer().style.borderColor = "");
-             });
-           },
-        });
-      </script>
-</head>
-
-
-
-<div class="container mt-4 mb-4">
-    <!--Bootstrap classes arrange web page components into columns and rows in a grid -->
-    <div class="row justify-content-md-center">
-        <div class="col-md-12 col-lg-8 bg-light">
-            <h1 class="h2 mb-4">Nuevo Diario</h1>
-            <p class="bg-warning">The warning message will remain if you're opening the file in a browser without running it through a local host.</p>
-            <div class="form-group">
-                <textarea id="editor"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary mx-auto d-block">Hecho</button>
-        </div>
-    </div>
-</div>
-
-</body>
-
+                (editor.getContainer().style.boxShadow = ""),
+                    (editor.getContainer().style.borderColor = "");
+            });
+        },
+    });
+</script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"
+    integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA=="
+    crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -25,6 +25,10 @@ body {
 #diary_icon{
     width: 355px;
 }
+#header_icon{
+    width: 870px;
+    height: 300px;
+}
 
 /*NavBar*/
 .navbar {
