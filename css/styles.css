@@ -33,6 +33,9 @@ body {
     height: 300px;
 }
 
+#footer_icon{
+    width: 90px;
+}
 /*NavBar*/
 .navbar {
     background-color: var(--myBlue);
