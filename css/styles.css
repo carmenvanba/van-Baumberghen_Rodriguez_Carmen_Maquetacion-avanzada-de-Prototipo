@@ -21,12 +21,11 @@ body {
 
 /* Images */
 #profile_icon {
-    width: 600px;
-    height: 300px;
+    width: 100%
 }
 
 #diary_icon {
-    width: 355px;
+    width: 100%;
 }
 
 #header_icon {
