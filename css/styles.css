@@ -99,7 +99,6 @@ body {
 /*Right*/
 #diaries_section {
     height: 690px;
-    width: 66%;
     overflow: auto;
 }
 
