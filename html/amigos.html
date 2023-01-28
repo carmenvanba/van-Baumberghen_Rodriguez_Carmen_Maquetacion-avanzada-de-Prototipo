@@ -20,6 +20,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--My Styles-->
     <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/chat_style.css" rel="stylesheet">
 </head>
 
 
@@ -28,236 +29,196 @@
     <header>
         <!-- Navbar content -->
         <nav class="navbar navbar-expand-sm">
-          <div class="container-fluid">
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="../html/loreseekers.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="../html/nuevoDiario.html">Nuevo Diario</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="../html/Logros.html">Logros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="../html/amigos.html">Amigos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Misiones</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Tienda</a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Buscar">
-                <button class="btn btn-primary" type="button">Buscar</button>
-              </form>
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../html/loreseekers.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../html/nuevoDiario.html">Nuevo Diario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../html/Logros.html">Logros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="../html/amigos.html">Amigos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Misiones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Tienda</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Buscar">
+                        <button class="btn btn-primary" type="button">Buscar</button>
+                    </form>
+                </div>
             </div>
-          </div>
         </nav>
-      </header>
-    
+    </header>
+
     <main>
-        <section>
-            <div class="container py-2">
-
-                <div class="row d-flex justify-content-center">
-                    <div class="col-12">
-
-                        <div class="card" id="chat1" style="border-radius: 15px;">
-                            <div class="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0"
-                                id="chat_head" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                                <i class="fas fa-angle-left"></i>
-                                <p class="mb-0 fw-bold">Chat</p>
-                                <i class="fas fa-times"></i>
-                            </div>
-                            <div class="card-body">
-
-                                <div class="d-flex flex-row justify-content-start mb-4">
-                                    <img src="../images/loreseekers_logo.png" alt="avatar 1"
-                                        style="width: 45px; height: 100%;">
-                                    <div class="p-3 ms-3" style="border-radius: 15px; background-color: #d1d1d1;">
-                                        <p class="small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Dolorem repellendus perferendis odit?</p>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex flex-row justify-content-end mb-4">
-                                    <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #9abaff">
-                                        <p class="small mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                            Porro distinctio iure illum repellendus neque deleniti excepturi in, vitae
-                                            enim officia!.</p>
-                                    </div>
-                                    <img src="../images/icon_01.png" alt="avatar 1" style="width: 45px; height: 100%;">
-                                </div>
-
-                                <div class="d-flex flex-row justify-content-start mb-4">
-                                    <img src="../images/loreseekers_logo.png" alt="avatar 1"
-                                        style="width: 45px; height: 100%;">
-                                    <div class="ms-3" style="border-radius: 15px;">
-                                        <div class="bg-image">
-                                            <img src="../images/loreseekers_logo.png"
-                                                style="border-radius: 15px; background-color: #d1d1d1;" alt="video">
-                                            <a href="#!">
-                                                <div class="mask"></div>
-                                            </a>
+        <div class="row g-0">
+            <!--Left column-->
+            <div class="col-xs-1 col-sm-4 col-md-12 col-lg-7">
+                <div class="rounded-1 p-3" id="main_content">
+                    <h2>Amigos:</h2>
+                    <div class="rounded-3 p-2" id="text_bg">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eligendi nostrum
+                            recusandae quasi tempora
+                            rerum nisi ex quibusdam exercitationem eos explicabo pariatur, molestiae consectetur
+                            nulla rem eveniet
+                            velit inventore autem, facilis ipsa repudiandae. Corporis laboriosam aspernatur aliquam
+                            molestias
+                            reiciendis, commodi voluptatem libero accusantium est quibusdam exercitationem
+                            doloribus, eius illum quae.
+                        </p>
+                    </div>
+                </div>
+                <!--End Left column-->
+            </div>
+            <!--Right column-->
+            <div class="col-xs-1 col-sm-8 col-md col-lg-5">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12">
+                            <div class="card" id="chat1">
+                                <h2>Chat:</h2>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row justify-content-start mb-4">
+                                        <img src="../images/loreseekers_logo.png" alt="avatar 1"
+                                            style="width: 45px; height: 100%;">
+                                        <div class="p-3 ms-3" style="border-radius: 10px; background-color: #6bafcf;">
+                                            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Dolorem repellendus perferendis odit?</p>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="d-flex flex-row justify-content-start mb-4">
-                                    <img src="../images/loreseekers_logo.png" alt="avatar 1"
-                                        style="width: 45px; height: 100%;">
-                                    <div class="p-3 ms-3" style="border-radius: 15px; background-color: #d1d1d1;">
-                                        <p class="small mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit..
-                                        </p>
+                                    <div class="d-flex flex-row justify-content-end mb-4">
+                                        <div class="p-3 me-3 border"
+                                            style="border-radius: 10px; background-color: #9abaff">
+                                            <p class="small mb-0">Lorem ipsum dolor sit, amet consectetur
+                                                adipisicing elit.
+                                                Porro distinctio iure illum repellendus neque deleniti excepturi in,
+                                                vitae
+                                                enim officia!.</p>
+                                        </div>
+                                        <img src="../images/avatar.png" alt="avatar 1"
+                                            style="width: 45px; height: 100%;">
+                                    </div>
+
+                                    <div class="d-flex flex-row justify-content-start mb-4">
+                                        <img src="../images/loreseekers_logo.png" alt="avatar 1"
+                                            style="width: 45px; height: 100%;">
+                                        <div class="ms-3" style="border-radius: 15px;">
+                                            <div class="bg-image">
+                                                <img src="../images/loreseekers_logo.png"
+                                                    style="border-radius: 10px; background-color: #6bafcf;" alt="video">
+                                                <a href="#!">
+                                                    <div class="mask"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row justify-content-start mb-4">
+                                        <img src="../images/loreseekers_logo.png" alt="avatar 1"
+                                            style="width: 45px; height: 100%;">
+                                        <div class="p-3 ms-3" style="border-radius: 10px; background-color: #6bafcf;">
+                                            <p class="small mb-0">Lorem ipsum dolor sit, amet consectetur
+                                                adipisicing elit..
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-outline">
+                                        <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                                        <label class="form-label" for="textAreaExample">Escribe tu
+                                            mensaje</label>
+                                        <button type="button"
+                                            class="btn btn-info btn-rounded float-end m-1">Enviar</button>
                                     </div>
                                 </div>
-
-                                <div class="form-outline">
-                                    <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
-                                    <label class="form-label" for="textAreaExample">Escribe tu
-                                        mensaje</label>
-                                    <button type="button" class="btn btn-info btn-rounded float-end m-1">Enviar</button>
-                                </div>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
-        </section>
+        </div>
+
     </main>
     <!-- place footer here -->
-    <!--https://mdbootstrap.com/docs/standard/navigation/footer/examples-and-customization/-->
-    <footer class="text-center text-lg-start text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <!-- Section: Links -->
-            <section class="">
-                <!--Grid row-->
-                <div class="row">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">
-                            Company name
-                        </h6>
-                        <p>
-                            Here you can use rows and columns to organize your footer
-                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="w-100 clearfix d-md-none" />
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                        <p>
-                            <a class="text-white">MDBootstrap</a>
-                        </p>
-                        <p>
-                            <a class="text-white">MDWordPress</a>
-                        </p>
-                        <p>
-                            <a class="text-white">BrandFlow</a>
-                        </p>
-                        <p>
-                            <a class="text-white">Bootstrap Angular</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="w-100 clearfix d-md-none" />
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">
-                            Useful links
-                        </h6>
-                        <p>
-                            <a class="text-white">Your Account</a>
-                        </p>
-                        <p>
-                            <a class="text-white">Become an Affiliate</a>
-                        </p>
-                        <p>
-                            <a class="text-white">Shipping Rates</a>
-                        </p>
-                        <p>
-                            <a class="text-white">Help</a>
-                        </p>
-                    </div>
-
-                    <!-- Grid column -->
-                    <hr class="w-100 clearfix d-md-none" />
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                        <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <!--Grid row-->
-            </section>
-            <!-- Section: Links -->
-
-            <hr class="my-3">
-
-            <!-- Section: Copyright -->
-            <section class="p-3 pt-0">
-                <div class="row d-flex align-items-center">
-                    <!-- Grid column -->
-                    <div class="col-md-7 col-lg-8 text-center text-md-start">
-                        <!-- Copyright -->
-                        <div class="p-3">
-                            © 2020 Copyright:
-                            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-                        </div>
-                        <!-- Copyright -->
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                        <!-- Facebook -->
-                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
-                            <img src="../images/luna.png" class="img-fluid" alt="logo Lore Seekers" style="width: 30px">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-
-                        <!-- Twitter -->
-                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-
-                        <!-- Google -->
-                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
-                            <i class="fab fa-google"></i>
-                        </a>
-
-                        <!-- Instagram -->
-                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-            </section>
-            <!-- Section: Copyright -->
+  <footer class="text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <img class="mx-auto d-block bd-placeholder-img img-fluid" id="footer_icon" src="../images/icon_04.png">
+            <h6 class="text-uppercase mb-4 font-weight-bold text-center">Contacto</h6>
+            <p><i class="fas fa-home mr-3"></i> Dirección: Lorem ipsum dolor sit amet.</p>
+            <p><i class="fas fa-envelope mr-3"></i> loreseekers@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 00 000 000 000</p>
+            <p><i class="fas fa-print mr-3"></i> + 00 000 000 000</p>
+          </div>
         </div>
-        <!-- Grid container -->
-    </footer>
+      </section>
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2023 Copyright:
+              <a class="text-white" href="../index.html">LoreSeekers</a>
+            </div>
+            <!-- Copyright -->
+          </div><!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+              <img src="../images/luna.png" class="img-fluid" alt="logo Lore Seekers" style="width: 30px">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+              <img src="../images/luna.png" class="img-fluid" alt="logo Lore Seekers" style="width: 30px">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+              <img src="../images/luna.png" class="img-fluid" alt="logo Lore Seekers" style="width: 30px">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+              <img src="../images/luna.png" class="img-fluid" alt="logo Lore Seekers" style="width: 30px">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+    </div>
+  </footer>

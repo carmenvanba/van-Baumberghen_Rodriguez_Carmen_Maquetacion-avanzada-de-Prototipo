@@ -98,7 +98,7 @@ body {
 
 /*Right*/
 #diaries_section {
-    height: 691px;
+    height: 690px;
     width: 66%;
     overflow: auto;
 }
@@ -145,3 +145,14 @@ footer {
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(46, 127, 233); 
   }
+
+
+  /* Achievements */
+  div.achievements_section {
+    background-color:var(--myBlue);
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+ 

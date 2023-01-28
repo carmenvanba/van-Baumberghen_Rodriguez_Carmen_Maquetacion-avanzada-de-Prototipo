@@ -1,6 +1,9 @@
 #chat_head {
     background-color: var(--myBlue);
 }
+.card-body{
+    background-color: var(--myBlue);
+}
 
 #chat1 .form-outline .form-control~.form-notch div {
     pointer-events: none;
@@ -72,8 +75,4 @@
 
 #chat1 .form-outline .form-control:focus~.form-label {
     color: #39c0ed;
-}
-
-#chat1 .form-outline .form-control~.form-label {
-    color: #bfbfbf;
 }
