@@ -18,7 +18,20 @@ body {
     background-image: url("../images/back_1.png");
     color: white;
 }
+/* Buttons */
+#btn_icon {
+    width: 150px;
 
+}
+
+#btn_body {
+    margin-left: 120px;
+    margin-top: 50px;
+    z-index: 9;
+
+    width: 200px;
+    height: 50px;
+}
 /* Images */
 #profile_icon {
     width: 100%
@@ -71,13 +84,6 @@ body {
 #body_container {
     background-color: white;
 }
-
-#diaries_section {
-    height: 682px;
-    width: 66%;
-    overflow: auto;
-}
-
 .container {
     position: relative;
 }
@@ -90,30 +96,15 @@ body {
     z-index: 9;
 }
 
-/* Buttons */
-#btn_icon {
-    width: 150px;
-
-}
-
-#btn_body {
-    margin-left: 120px;
-    margin-top: 50px;
-    z-index: 9;
-
-    width: 200px;
-    height: 50px;
+/*Right*/
+#diaries_section {
+    height: 691px;
+    width: 66%;
+    overflow: auto;
 }
 
 
-
-
-/* Left */
-
-
-/* Profile */
-
-
+/* Left Profile */
 .progress {
     background-color: var(--MyCyanShadow);
     height: 20px;
@@ -131,3 +122,26 @@ footer {
     background-color: var(--myBlue);
     padding: 15px;
 }
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--myBlue); 
+    background-color: var(--MyCyanShadow);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--myCyan); 
+    border-radius: 1px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(46, 127, 233); 
+  }
