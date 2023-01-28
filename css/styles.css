@@ -34,7 +34,7 @@ body {
 }
 /* Images */
 #profile_icon {
-    width: 100%
+    width: 100%;
 }
 
 #diary_icon {
@@ -49,6 +49,7 @@ body {
 #footer_icon{
     width: 90px;
 }
+
 /*NavBar*/
 .navbar {
     background-color: var(--myBlue);
@@ -80,7 +81,9 @@ body {
 #text_bg {
     background-color: var(--MyCyanShadow);
 }
-
+.bg{
+    background-color: var(--myBlue);
+}
 #body_container {
     background-color: white;
 }
@@ -154,4 +157,8 @@ footer {
     width: 100%;
   }
   
- 
+ /* friend list */
+#friend_list {
+    height: 714px;
+    overflow: auto;
+}
