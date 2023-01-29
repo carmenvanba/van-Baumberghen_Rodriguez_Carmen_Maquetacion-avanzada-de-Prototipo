@@ -37,17 +37,17 @@
   </header>
   <main class="m-3">
     <div class="login-dark">
-      <form method="post">
+      <div class="form">
         <h2 class="sr-only">Login</h2>
         <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
         <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
         <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password">
         </div>
         <div class="form-group">
-          <button class="btn btn-primary fw-bold float-end mt-5" type="submit" id="submitForm">Enviar</button>
+          <button class="btn btn-primary fw-bold float-end mt-5" type="submit" id="submitForm"  onclick="logIn()">Enviar</button>
         </div>
-        <a href="#" class="forgot text-primary">He olvidado mi contraseña</a>
-      </form>
+        <a href="#" class="forgot text-primary text-decoration-none text-light">He olvidado mi contraseña</a>
+      </div>
     </div>
 
 
@@ -142,7 +142,7 @@
   </footer>
 
   <!-- My Scripts -->
-  <script src="./js/formValidation.js"></script>
+  <script src="../js/formValidation.js"></script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

@@ -147,11 +147,24 @@ function getJsonAccount(){
       nickName: document.getElementById("nickName").value,
       email: document.getElementById("email").value,
       password: document.getElementById("password").value,
-      avatar: "../images/avatar1.png",
+      avatar: "../images/avatar.png",
    }
 }//Fin Get Json Account
 
 
-//Sacar del localStorage
-var cosa = JSON.parse(localStorage.getItem("usuario"));
-console.log("Nick: "+(cosa.nickName));
+
+//Log In
+function logIn(){
+    //Save the data
+    usuarioLogged = {
+        nickName: "usuarioLogged",
+        email: "usuarioLogged@gmail.com",
+        password: "*",
+        avatar: "../images/avatar2.png",
+     }
+     localStorage.setItem("usuario", JSON.stringify(usuarioLogged));
+    //Go to the next page
+    window.location.replace("../html/loreseekers.html");
+ }//Fin Log in
+
+
