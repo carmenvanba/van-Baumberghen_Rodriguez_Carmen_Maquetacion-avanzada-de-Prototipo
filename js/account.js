@@ -12,3 +12,10 @@ var img = document.createElement("img");
 img.src = account.avatar;
 var src = document.getElementById("profile_icon");
 src.appendChild(img);
+
+
+
+//Go To Diary
+function goToDiary(){
+    window.location.replace("../html/diario.html");
+}

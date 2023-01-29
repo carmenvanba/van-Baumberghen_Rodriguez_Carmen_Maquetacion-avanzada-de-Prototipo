@@ -2,100 +2,252 @@
 <html lang="en">
 
 <head>
-    <title>Lore Seekers</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--Other meta tags-->
+  <title>Lore Seekers</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--Other meta tags-->
 
-    <meta name="description" content="Dnd tool">
-    <meta name="keywords" content="dnd, suscription, sourcebooks">
-    <meta name="author" content="Carmen van-Baumberghen Rodríguez">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/x-icon" href="../images/loreseekers_logo.png">
+  <meta name="description" content="Dnd tool">
+  <meta name="keywords" content="dnd, suscription, sourcebooks">
+  <meta name="author" content="Carmen van-Baumberghen Rodríguez">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="../images/loreseekers_logo.png">
 
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!--My Styles-->
-    <link href="../css/styles.css" rel="stylesheet">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!--My Styles-->
+  <link href="../css/styles.css" rel="stylesheet">
 </head>
 
 
 
 <body>
-    <header>
-        <!-- Navbar content -->
-        <nav class="navbar navbar-expand-sm">
-          <div class="container-fluid">
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="../html/loreseekers.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="../html/nuevoDiario.html">Nuevo Diario</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="../html/Logros.html">Logros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="../html/amigos.html">Amigos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Misiones</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Tienda</a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Buscar">
-                <button class="btn btn-primary" type="button">Buscar</button>
-              </form>
+  <header>
+    <!-- Navbar content -->
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link me-4" href="../html/loreseekers.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="../html/nuevoDiario.html">Nuevo Diario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="../html/Logros.html">Logros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="../html/amigos.html">Amigos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Misiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4 disabled text-secondary" aria-disabled="true" href="#">Tienda</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Buscar">
+            <button class="btn btn-primary" type="button">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container text-light pt-4 pb-5" id="main_content">
+      <h1 class="p-3 display-7 text-light text-center">Título del Diario</h1>
+      <div class="container mt-2 mb-4">
+        <img class="mx-auto d-block bd-placeholder-img img-fluid" id="header_icon" src="../images/placeholder.jpg">
+      </div>
+      <div class="row" id="index_row">
+        <!--Left-->
+        <div class="col-xs-1 col-sm col-md-6 col-lg-9 p-3">
+          <!--Scroll-->
+          <div class="diary_reading">
+            <!--Sesion Start-->
+            <h3 class="p-3 display-7 text-light text-center">Sesión 00/00/0000</h3>
+            <div class="rounded-3 p-2" id="text_bg">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque voluptatibus ipsum assumenda
+                exercitationem!
+                Nobis est dignissimos nam vero eum dolores explicabo consequatur, velit delectus voluptate molestiae
+                soluta ipsa voluptatem eligendi inventore itaque fuga
+                aperiam deserunt magnam dolorem dolorum repellat fugit quidem? Veritatis consectetur totam corrupti
+                quasi
+                fugit laudantium odio?
+              </p>
+              <div class="container mt-2 mb-4">
+                <img class="mx-auto d-block bd-placeholder-img img-fluid my-5" src="../images/books.png">
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut consectetur ad necessitatibus quaerat
+                laborum quae distinctio, reiciendis optio quis libero! Provident nam incidunt dolorum magnam ab! Neque
+                itaque nostrum natus ex numquam id, quod cum dolorem placeat dignissimos! Officia sunt, placeat ea
+                alias,
+                praesentium repudiandae ullam ut ab exercitationem deleniti perspiciatis repellendus, mollitia
+                consectetur
+                dolor animi voluptatem quasi. Sint velit accusamus fugiat qui autem!
+              </p>
+            </div>
+            <!--Session Start-->
+            <h3 class="p-3 display-7 text-light text-center">Sesión 00/00/0000</h3>
+            <div class="rounded-3 p-2" id="text_bg">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque voluptatibus ipsum assumenda
+                exercitationem!
+                Nobis est dignissimos nam vero eum dolores explicabo consequatur, velit delectus voluptate molestiae
+                soluta ipsa voluptatem eligendi inventore itaque fuga
+                aperiam deserunt magnam dolorem dolorum repellat fugit quidem? Veritatis consectetur totam corrupti
+                quasi
+                fugit laudantium odio?
+              </p>
+              <div class="container mt-2 mb-4">
+                <img class="mx-auto d-block bd-placeholder-img img-fluid my-5" src="../images/avatar3.png">
+              </div>
             </div>
           </div>
-        </nav>
-      </header>
-    <main>
+          <!--End scroll-->
+        </div>
+        <!--Right-->
+        <div class="col-xs-1 col-sm col-md-6 col-lg-3 p-3">
+          <h3 class="p-3 display-7 text-light text-center">Misiones</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              First checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Second checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Third checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Fourth checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Fifth checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Sixth checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Seventh checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Eighth checkbox
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
 
 
-     
 
 
 
 
 
 
-    </main>
+  <!-- place footer here -->
+  <footer class="text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <img class="mx-auto d-block bd-placeholder-img img-fluid" id="footer_icon" src="../images/icon_04.png">
+            <h6 class="text-uppercase mb-4 font-weight-bold text-center">Contacto</h6>
+            <p><i class="fas fa-home mr-3"></i> Dirección: Lorem ipsum dolor sit amet.</p>
+            <p><i class="fas fa-envelope mr-3"></i> loreseekers@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 00 000 000 000</p>
+            <p><i class="fas fa-print mr-3"></i> + 00 000 000 000</p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2023 Copyright:
+              <a class="text-white" href="../index.html">LoreSeekers</a>
+            </div>
+            <!-- Copyright -->
+          </div><!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+              <img src="../images/luna.png" class="img-fluid" alt="logo Lore Seekers" style="width: 30px">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+              <img src="../images/luna.png" class="img-fluid" alt="logo Lore Seekers" style="width: 30px">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+              <img src="../images/luna.png" class="img-fluid" alt="logo Lore Seekers" style="width: 30px">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+              <img src="../images/luna.png" class="img-fluid" alt="logo Lore Seekers" style="width: 30px">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+    </div>
+  </footer>
 
 
 
-    <footer>
-        <!-- place footer here -->
-    </footer>
 
 
 
 
 
 
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
 
-
-
-
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

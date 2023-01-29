@@ -18,16 +18,17 @@ body {
     background-image: url("../images/back_1.png");
     color: white;
 }
+
 /* Buttons */
 #btn_icon {
     width: 150px;
 }
 
-#btn_show_password{
-  font-size: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #152349;
+#btn_show_password {
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #152349;
 }
 
 #btn_body {
@@ -38,6 +39,7 @@ body {
     width: 200px;
     height: 50px;
 }
+
 /* Images */
 #profile_icon {
     width: 100%;
@@ -52,7 +54,7 @@ body {
     height: 300px;
 }
 
-#footer_icon{
+#footer_icon {
     width: 90px;
 }
 
@@ -87,12 +89,15 @@ body {
 #text_bg {
     background-color: var(--MyCyanShadow);
 }
-.bg{
+
+.bg {
     background-color: var(--myBlue);
 }
+
 #body_container {
     background-color: white;
 }
+
 .container {
     position: relative;
 }
@@ -135,35 +140,35 @@ footer {
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--myBlue); 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--myBlue);
     background-color: var(--MyCyanShadow);
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--myCyan); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--myCyan);
     border-radius: 1px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(46, 127, 233); 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(46, 127, 233);
+}
 
 
-  /* Achievements */
-  div.achievements_section {
-    background-color:var(--myBlue);
+/* Achievements */
+div.achievements_section {
+    background-color: var(--myBlue);
     overflow: auto;
     white-space: nowrap;
     width: 100%;
-  }
-  
- /* friend list */
+}
+
+/* friend list */
 #friend_list {
     height: 714px;
     overflow: auto;
@@ -172,69 +177,73 @@ footer {
 
 /* login form */
 .login-dark {
-    height:500px;
-    background-size:cover;
-    position:relative;
-  }
-  
-  .login-dark .form {
-    max-width:320px;
-    width:90%;
-    background-color:var(--myBlue2);
-    padding:40px;
-    border-radius:4px;
-    transform:translate(-50%, -50%);
-    position:absolute;
-    top:50%;
-    left:50%;
-    color:#fff;
-    box-shadow:3px 3px 4px rgba(0,0,0,0.2);
-  }
-  
-  .login-dark .illustration {
-    text-align:center;
-    padding:15px 0 20px;
-    font-size:100px;
-    color:#2980ef;
-  }
-  
-  .login-dark .form .form-control {
-    background:none;
-    border:none;
-    border-bottom:1px solid #434a52;
-    border-radius:0;
-    box-shadow:none;
-    outline:none;
-    color:inherit;
-  }
-  
-  .login-dark .form .btn-primary {
-    border:none;
-    border-radius:4px;
-    padding:11px;
-    box-shadow:none;
-    margin-top:26px;
-    text-shadow:none;
-    outline:none;
-  }
+    height: 500px;
+    background-size: cover;
+    position: relative;
+}
 
-  
-  .login-dark .form .forgot {
-    display:block;
-    text-align:center;
-    font-size:12px;
-    color:#6f7a85;
-    opacity:0.9;
-    text-decoration:none;
-  }
-  
-  .login-dark .form .forgot:hover, .login-dark .form .forgot:active {
-    opacity:1;
-    text-decoration:none;
-  }
-  
-  .login-dark .form .btn-primary:active {
-    transform:translateY(1px);
-  }
-  
-  
+.login-dark .form {
+    max-width: 320px;
+    width: 90%;
+    background-color: var(--myBlue2);
+    padding: 40px;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-dark .illustration {
+    text-align: center;
+    padding: 15px 0 20px;
+    font-size: 100px;
+    color: #2980ef;
+}
+
+.login-dark .form .form-control {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #434a52;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+}
+
+.login-dark .form .btn-primary {
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 26px;
+    text-shadow: none;
+    outline: none;
+}
+
+
+.login-dark .form .forgot {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.login-dark .form .forgot:hover,
+.login-dark .form .forgot:active {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.login-dark .form .btn-primary:active {
+    transform: translateY(1px);
+}
+
+.diary_reading {
+    height:500px;
+    overflow: auto;
+}
