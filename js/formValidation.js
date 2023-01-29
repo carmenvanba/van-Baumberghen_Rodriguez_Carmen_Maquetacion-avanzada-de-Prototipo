@@ -136,7 +136,7 @@ function validateForm(){
        //Save the data
        localStorage.setItem("usuario", JSON.stringify(getJsonAccount()));
        //Go to the next page
-       window.location.replace("../html/loreseekers.html");
+       window.location.replace("./html/loreseekers.html");
    }//Fin Si
 }//Fin Form Validation
 
