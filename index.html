@@ -27,14 +27,15 @@
     <nav class="navbar navbar-light" id="mynavbar">
       <div class="container-fluid">
         <div class="d-flex justify-content-start">
-          <img src="./images/logo_horizontal_contrast.png" class="img-fluid" alt="logo Lore Seekers"
-            style="width: 200px">
+          <a href="../index.html">
+            <img src="../images/logo_horizontal_contrast.png" class="img-fluid" alt="logo Lore Seekers"
+              style="width: 200px">
+          </a>
         </div>
       </div>
     </nav>
   </header>
   <main class="m-3">
-    <a class="nav-link me-4 text-center" href="../html/loreseekers.html">Pagina</a>
     <div class="container text-light pt-5" id="main_content">
       <div class="row" id="index_row">
         <!--Left-->
@@ -53,43 +54,39 @@
               <small class="text-muted">Already registered?</small>
               Log in here
             </p>
-            <div class="container justify-content-center m-3">
-              <form class="row g-3 needs-validation" id="formulary" novalidate>
-                <div class="col position-relative">
-                  <label for="nombre" class="form-label">Nickname</label>
-                  <input type="text" class="form-control" placeholder="Nickname" id="nickname" required>
 
-                  <!-- Nickname Validation -->
-                  <div class="valid-tooltip">Campo válido</div>
-                  <div class="invalid-tooltip">Se debe completar el campo</div>
+            <div class="container text-center">
+              <!--Nickname-->
+              <input type="text" class="inputFields text-center m-1" id="nickName" name="nickName" placeholder="Nickname" value=""
+                oninput="return nicknameValidation()" required />
 
-                  <label for="apellido" class="form-label">Email</label>
-                  <input type="text" class="form-control" placeholder="Email" id="email" required>
+              <!-- Email -->
+              <br>
+              <input type="email" class="inputFields text-center m-1" id="email" name="email" placeholder="Email" value="a@a.com"
+                oninput="return emailValidation()" required />
 
-                  <!-- Email Validation -->
-                  <div class="valid-tooltip">Campo válido</div>
-                  <div class="invalid-tooltip">Se debe completar el campo</div>
+              <!-- Password -->
+              <br>
+              <input type="password" class="inputFields text-center m-1" id="password" name="password" placeholder="Contraseña"
+                value="C@rmen1" oninput="return passwordValidation()" required />
 
-                  <label for="nombre" class="form-label">Password</label>
-                  <input type="text" class="form-control" placeholder="Password" id="password" required>
 
-                  <!-- Password Validation -->
-                  <div class="valid-tooltip">Campo válido</div>
-                  <div class="invalid-tooltip">Se debe completar el campo</div>
+              <br>
+              <button class="btn btn-primary fw-bold m-1 mb-3" type="submit" id="btn_show_password" onclick="return showPassword()">Ver
+                Password</button>
 
-                  <label for="nombre" class="form-label">Fecha Nacimiento</label>
-                  <input type="date" class="form-control" id="birthdate" required>
+              <!-- Repeat Password -->
+              <br>
+              <input type="password" class="inputFields text-center m-1" id="repeatPassword" name="repeatPassword"
+                placeholder="Repetir Contraseña" value="C@rmen1" oninput="return repeatPasswordValidation()" required />
+              <br>
+              <button class="btn btn-primary fw-bold m-4" type="submit" id="submitForm"
+                onclick="validateForm()">Enviar</button>
 
-                  <!-- Birthdate Validation -->
-                  <div class="valid-tooltip">Campo válido</div>
-                  <div class="invalid-tooltip">Se debe completar el campo</div>
-
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary fw-bold float-end" type="submit" id="submitForm">Enviar</button>
-                </div>
-              </form>
             </div>
+
+            </form>
+
           </div>
         </div>
       </div>
@@ -105,13 +102,14 @@
         <!--Grid row-->
         <div class="row">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"> 
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <img class="mx-auto d-block bd-placeholder-img img-fluid" id="footer_icon" src="../images/icon_01.png">
             <h6 class="text-uppercase mb-4 font-weight-bold text-center">
               Crea tus diarios de Aventuras
             </h6>
             <p class="text-center">
-              Lore Seekers es una aplicación de apoyo al rol de mesa para llevar registro de las historias que los jugadores viven a través de sus personajes.
+              Lore Seekers es una aplicación de apoyo al rol de mesa para llevar registro de las historias que los
+              jugadores viven a través de sus personajes.
             </p>
           </div>
           <!-- Grid column -->
